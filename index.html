@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceship Cave Game</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        canvas {
+            display: block;
+        }
+        #hud {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        }
+        #fuelMeter {
+            width: 200px;
+            height: 20px;
+            background-color: rgba(0,0,0,0.5);
+            margin-bottom: 5px;
+        }
+        #fuelBar {
+            height: 100%;
+            background-color: #0f0;
+            width: 100%;
+            transition: width 0.3s ease-in-out;
+        }
+        .touchButton {
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            user-select: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div id="hud">
+        <div id="fuelMeter">
+            <div id="fuelBar"></div>
+        </div>
+        <div>Fuel: <span id="fuelLevel"></span></div>
+        <div>Score: <span id="scoreDisplay"></span></div>
+    </div>
+    <script src="constants.js"></script>
+    <script src="setup.js"></script>
+    <script src="spaceship.js"></script>
+    <script src="cave.js"></script>
+    <script src="controls.js"></script>
+    <script src="draw.js"></script>
+    <script src="utils.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+const EARTH_TERMINAL_VELOCITY = 53; // m/s
+const ACCELERATION = 0.05; // m/s^2
+const PIXEL_PER_METER = 10; // Adjust this value to change the scale
+const PLANET_SURFACE_HEIGHT = 200; // Height of the planet surface from the top of the canvas
+const CAVE_ENTRANCE_WIDTH = 300; // Fixed width for the cave entrance
+const MIN_OBSTACLE_DISTANCE = 40; // Minimum distance between obstacles and walls (reduced for more variety)
+const MAX_OBSTACLES_PER_SEGMENT = 3; // Reduced for smaller obstacles
+const WALL_VARIATION = 30; // Increased maximum pixel variation for wall undulation
+const SEGMENTS_TO_RENDER = 10; // Number of segments to render in advance
